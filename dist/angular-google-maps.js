@@ -5050,7 +5050,7 @@ Original idea from: http://stackoverflow.com/questions/22758950/google-map-drawi
               var _ref, _ref1;
               if ((scope.bounds != null) && (((_ref = scope.bounds) != null ? _ref.sw : void 0) != null) && (((_ref1 = scope.bounds) != null ? _ref1.ne : void 0) != null) && _this.validateBoundPoints(scope.bounds)) {
                 bounds = _this.convertBoundPoints(scope.bounds);
-                return $log.info("new new bounds created: " + rectangle);
+                return true;//$log.info("new new bounds created: " + rectangle);
               } else if ((scope.bounds.getNorthEast != null) && (scope.bounds.getSouthWest != null)) {
                 return bounds = scope.bounds;
               } else {
